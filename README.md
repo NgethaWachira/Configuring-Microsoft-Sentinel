@@ -67,6 +67,45 @@ type Log Analytics workspace and select it, Click Create and start the configura
   <img src="https://github.com/NgethaWachira/Configuring-Microsoft-Sentinel/blob/4b04491e5cdf7bd3313a2fcdb1b2e2270ae323fd/Images/Role%20assigned%20to%20Azure%20ATP...as%20a%20contributor.PNG" width="700" />
 </p>
 
+- Since Sentinel uses the Log analytics workspace to store information, we then configure Log analytics workspace particularly for managing the log data
+stored in the tables. We navigate and click Log Analytics Workspace in Azure portal, under the settings section look for Tables and click on it. This will
+show you a list of all the tables within your Log Analytics workspace. The tables store various types of log data, such as security logs, audit logs, and
+other telemetry data.
+
+<p align="center">
+  <img src="https://github.com/NgethaWachira/Configuring-Microsoft-Sentinel/blob/86b0dd2d521e8a39211a495e07c4860901bacc40/Images/Storing%20log%20data%20under%20tables.PNG" width="700" />
+</p>
+
+- To nanage Log Data Stored in Tables, Click on any table to view its schema, we can use Kusto Query Language (KQL) to query and analyze the data stored
+in these tables. We then set the retention period for each table's data to configure how long data should be kept in the workspace before being automatically deleted.
+NOte: After configuring the tables and data, we can set up alerts, create workbooks, and dashboards in Microsoft Sentinel based on the log data from these tables.
+
+<p align="center">
+  <img src="https://github.com/NgethaWachira/Configuring-Microsoft-Sentinel/blob/ca97ee208166c4e91e73c555825bb60af5a32cda/Images/Security%20event%20table.PNG" width="300" />
+  <img src="https://github.com/NgethaWachira/Configuring-Microsoft-Sentinel/blob/ca97ee208166c4e91e73c555825bb60af5a32cda/Images/Log%20retention%20settings.PNG" width="300" />
+</p>
+
+- Next we install data connectors, we'll use the Microsoft Sentinel Training Lab Solution. It' a pre-packaged solution that provides sample data and
+configurations for training purposes. We find it in Azure portal, type Microsoft Sentinel in the search bar and open our Workspace, Go to Content Management,
+ and open Content Hub, type training in the search bar to find the Microsoft Sentinel Training Lab Solution.
+
+<p align="center">
+  <img src="https://github.com/NgethaWachira/Configuring-Microsoft-Sentinel/blob/38ba5e709a278be62c37b42c81f877268b1ca4e4/Images/Data%20connectors.PNG" width="700" />
+</p>
+
+- We then select and install the Microsoft Sentinel Training Lab Solution, selecting the appropriate Resource Group and Sentinel Workspace during the setup,
+review the settings, and once you're satisfied, click Create. After the Lab solution is installed, go back to your Content Hub in Content Management.
+You should see the Microsoft Sentinel Training Lab Solution listed as an installed solution.
+
+<p align="center">
+  <img src="https://github.com/NgethaWachira/Configuring-Microsoft-Sentinel/blob/e40df0a397b984a9542dd1e6ab9c0907c70e4017/Images/Installing%20training%20lab%20connector.PNG" width="300" />
+  <img src="https://github.com/NgethaWachira/Configuring-Microsoft-Sentinel/blob/e40df0a397b984a9542dd1e6ab9c0907c70e4017/Images/Creating%20training%20lab%20connector.PNG" width="300" />
+</p>
+
+
+
+
+
 
 
 
